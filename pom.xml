@@ -676,13 +676,20 @@
                 <configuration>
                     <imageName>mystudent</imageName>
                     <dockerDirectory>src/main/docker</dockerDirectory>
-                    <resources>
+                    <dockerFile>${project.basedir}/src/main/docker/Dockerfile</dockerFile>
+ <!--                   <resources>
                         <resource>
                             <targetPath>/</targetPath>
                             <directory>${project.build.directory}</directory>
                             <include>${project.build.finalName}.war</include>
                         </resource>
-                    </resources>
+                    </resources> -->
+                    <artifacts>
+                      <artifact>
+                          <file>${project.basedir}/target/${project.artifactId}-${project.version}.jar</file>
+                          <dest>${project.artifactId}.jar</dest>
+                      </artifact>
+                    </artifacts>
                 </configuration>
             </plugin>
             <!-- jhipster-needle-maven-add-plugin -->
