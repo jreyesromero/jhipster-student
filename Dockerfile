@@ -3,7 +3,7 @@ FROM openjdk:8-jre-alpine
 ENV JHIPSTER_SLEEP 0
 
 # add directly the war
-ADD *.war /app.war
+ADD target/*.war /app.war
 
 RUN sh -c 'touch /app.war'
 VOLUME /tmp
