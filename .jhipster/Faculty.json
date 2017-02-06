@@ -1,0 +1,29 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "studentFaculty",
+            "otherEntityName": "student",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "faculty"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "facultyName",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "address",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20170204101200",
+    "dto": "no",
+    "service": "serviceClass",
+    "entityTableName": "faculty",
+    "pagination": "no"
+}

@@ -1,0 +1,24 @@
+{
+    "myStudentApp": {
+        "faculty" : {
+            "home": {
+                "title": "Faculties",
+                "createLabel": "Crear nuevo Faculty",
+                "createOrEditLabel": "Crear o editar Faculty",
+                "search": "Search for Faculty"
+            },
+            "created": "Un nuevo Faculty ha sido creado con el identificador {{ param }}",
+            "updated": "Un Faculty ha sido actualizado con el identificador {{ param }}",
+            "deleted": "Un Faculty ha sido eliminado con el identificador {{ param }}",
+            "delete": {
+                "question": "¿Seguro que quiere eliminar Faculty {{ id }}?"
+            },
+            "detail": {
+                "title": "Faculty"
+            },
+            "facultyName": "Faculty Name",
+            "address": "Address",
+            "studentFaculty": "Student Faculty"
+        }
+    }
+}
