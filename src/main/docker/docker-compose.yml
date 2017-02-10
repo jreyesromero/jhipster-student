@@ -1,9 +1,10 @@
 version: '2'
 services:
     mystudent-app:
-        image: mystudent
+        image: jreyesromero/mystudent
         external_links:
             - mystudent-mysql:mysql
+            - mystudent-sonar:sonar 
         environment:
             - SPRING_PROFILES_ACTIVE=prod,swagger
             - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/mystudent?useUnicode=true&characterEncoding=utf8&useSSL=false
@@ -14,3 +15,7 @@ services:
         extends:
             file: mysql.yml
             service: mystudent-mysql
+    mystudent-sonar:
+        extends:
+            file: sonar.yml
+            service: mystudent-sonar
